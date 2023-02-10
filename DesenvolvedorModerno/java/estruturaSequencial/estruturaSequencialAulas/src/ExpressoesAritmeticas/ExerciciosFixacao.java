@@ -130,13 +130,14 @@ public class ExerciciosFixacao {
 
 
         // Duracao
-        int duracaoSegundos = 12506;
-        double duracaoHoras = duracaoSegundos / 3600.0;
-        doub
-//        double duracaoMinutos
+        int duracao = 12506;
+        int resto = duracao % 3600;
 
-        System.out.printf("%f",duracaoHoras);
+        int horas = duracao / 3600;
+        int minutos = resto / 60;
+        int segundos = resto % 60;
 
+        System.out.printf("%d:%d:%d",horas, minutos,segundos);
     }
 
 }
