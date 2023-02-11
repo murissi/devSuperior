@@ -7,55 +7,97 @@
     <title>Index</title>
 </head>
 <body>
-    <h1>Loja Top</h1>
-    <ul>
-        <li><a href="#categories">Categorias</a></li>
-        <li><a href="#titles">Títulos</a></li>
-        <li><a href="#about">Sobre nós</a></li>
-    </ul>
-
-    <h2 id="categories">Categorias</h2>
-    <ul>
-        <li><a href="">Fantasia</a></li>
-        <li><a href="">Educação</a></li>
-
-    </ul>
-
-    <h2 id="titles">Títulos</h2>
-    <img src="/DesenvolvedorModerno/html/img/book1.jpg" alt="Senhor dos aneis">
-    <h3>O senhor dos anéis</h3>
-    <p>Navegue por essa grande aventura</p>
-    <p>R$ 389.99</p>
-
-    <img src="/DesenvolvedorModerno/html/img/book2.jpg" alt="Rails for dummies">
-    <h3>Rails for dummies</h3>
-    <p>Aprenda esta fantastica ferramenta</p>
-    <p>R$ 250.49</p>
-
-
-    <h2 id="about">Sobre nós</h2>
-    <h3>O que fazemos</h3>
-    <p>Ajudamos pessoas a se tornarem desenvolvedores profissionais</p>
-    <h3>Saiba mais</h3>
+    <header>
     
-    <iframe 
-        width="320"
-        height="180"
-        src="https://www.youtube.com/embed/Pu1zdTrcCT4"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-    </iframe>
+        <nav>
+            <h1>Loja Top</h1>
+            <ul>
+                <li><a href="#categories">Categorias</a></li>
+                <li><a href="#titles">Títulos</a></li>
+                <li><a href="#about">Sobre nós</a></li>
+            </ul>
+        </nav>
+ 
+    </header>
 
-    <h2>Siga-nos</h2>
-    <a href="youtube.com">YouTube</a>
-    <a href="instagram.com">instagram</a>
-    <h2>Entre em contato</h2>
-    <address>
+    <main>
+        <section id="categories">
+            <h2>Categorias</h2>
+            <ul>
+                <li><a href="">Fantasia</a></li>
+                <li><a href="">Educação</a></li>
+        
+            </ul>
+        </section>
+    
+        <section id="titles">
+            <h2>Títulos</h2>
 
-        Escreva para o nosso <a href="mailto:contato@devsuperior.com">email</a>. <br> Até a prómixa.
+            <div>
+                <img src="/DesenvolvedorModerno/html/img/book1.jpg" alt="Senhor dos aneis">
+                <div>
+                    <h3>O senhor dos anéis</h3>
+                    <p><span>R$</span> 389.99</p>
+                    <p>Navegue por essa grande aventura</p>
 
-    </address>
+                </div>
+                
+            </div>
+            
+            <div>
+                <img src="/DesenvolvedorModerno/html/img/book2.jpg" alt="Rails for dummies">
+                <div>
+                    <h3>Rails for dummies</h3>
+                    <p>Aprenda esta fantastica ferramenta</p>
+                    <p><span>R$</span> 250.49</p>
+                </div>
+                    
+            </div>
+        
+       
+        </section>
 
+        <section id="about">
+            <h2>Sobre nós</h2>
+            <h3>O que fazemos</h3>
+            <p>Ajudamos pessoas a se tornarem desenvolvedores profissionais</p>
+            <h3>Saiba mais</h3>
+            
+            <iframe 
+                width="320"
+                height="180"
+                src="https://www.youtube.com/embed/Pu1zdTrcCT4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+
+        </section>
+    </main>
+
+    <footer>
+
+        <div>
+            <div>
+                <h2>Siga-nos</h2>
+                <a href="youtube.com">YouTube</a>
+                <a href="instagram.com">instagram</a>
+            
+            </div>
+    
+            <div>
+                <h2>Entre em contato</h2>
+                
+                <address>
+                    Escreva para o nosso <a href="mailto:contato@devsuperior.com">email</a>. <br> Até a prómixa.
+                </address>
+    
+            </div>
+        </div>
+
+        
+    </footer>
+   
+    
 </body>
 </html>
