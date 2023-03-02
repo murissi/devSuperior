@@ -28,7 +28,6 @@ public class Program {
             System.out.printf("Enter #%d item data: %n",i);
             System.out.print("Product name: ");
             String nameProduct = sc.nextLine();
-            orderC1.addItem();
 
         }
 
