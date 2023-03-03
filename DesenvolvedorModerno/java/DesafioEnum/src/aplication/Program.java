@@ -53,7 +53,10 @@ public class Program {
         System.out.println("FOLHA DE PAGAMENTO: ");
         System.out.printf("Departamento %s = R$ %.2f%n",dept.getName(),dept.payroll());
         System.out.printf("Pagamento realizado no dia: %d%n", dept.getPayday());
-        dept.retornaFuncionario();
+        System.out.println("Funcionários: ");
+        for (Employee i : dept.getEmployees()){
+            System.out.println(i.getName());
+        }
         System.out.printf("Para duvidas favor entrar em contato: %s",dept.getAdress().getEmail());
 
     }

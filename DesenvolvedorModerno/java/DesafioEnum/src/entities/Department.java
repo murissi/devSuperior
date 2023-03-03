@@ -60,9 +60,7 @@ public class Department {
         return sum;
     }
 
-    public void retornaFuncionario(){
-        for (Employee i: employees) {
-            System.out.println(i.getName());
-        }
+    public List<Employee> getEmployees() {
+        return employees;
     }
 }
