@@ -1,5 +1,7 @@
 package ProjetoTryCatch;
 
+import ProjetoTryCatch.exceptions.DomainException;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
@@ -38,7 +40,15 @@ public class Reservation {
         return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
     }
 
-    public void updateDates(Date checkIn, Date checkOut) {
+    public void updateDates(Date checkIn, Date checkOut) throws DomainException {
+        Date now = new Date();
+        if (checkIn.before(now) || checkOut.before(now)) {
+            // Exceção usada quando os argumentos são invalidos.
+            throw new DomainException(" Reservation dates for update must be future dates");
+        }
+        if (!checkOut.after(checkIn)) {
+            throw new DomainException(" Check-out date be after check-in date");
+        }
         this.checkIn = checkIn;
         this.checkOut = checkOut;
     }
